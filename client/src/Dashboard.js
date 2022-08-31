@@ -7,6 +7,7 @@ function Dashboard() {
     <div className="dashboard">
         <Navbar />
         <MainComponent />
+        <Footer />
     </div>
 )
 }
