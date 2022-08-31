@@ -1,0 +1,29 @@
+.navbar{
+    height: 150px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+  .main{
+    background: #eee;
+  }
+  
+  .navbarHeading{
+    margin-top: 0;
+    margin-left: 40px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .navMenuItem{
+    list-style: none;
+    width: fit-content;
+    display: inline;
+    margin-right: 50px;
+  }
