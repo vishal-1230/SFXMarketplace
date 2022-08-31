@@ -6,7 +6,7 @@ import './Navbar.css'
 function Navbar() {
   return (
     <div className='navbar'>
-        <span className='navbarHeading'>SFX<span>Marketplace</span></span>
+        <span className='navbarHeading'>SFX<span className='navbarHeading2'>Marketplace</span></span>
           <div className="navMenu">
           <Link to='/home' className='a'><li className="navMenuItem">Home</li></Link>
           <Link to='/about' className='a'><li className="navMenuItem">About</li></Link>
