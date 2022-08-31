@@ -46,6 +46,7 @@
     font-size: 16px;
     border-radius: 10px;
     transition-duration: 150ms;
+    cursor: pointer;
 }
 
 .signinBtn:hover{
