@@ -2,7 +2,9 @@ import React from 'react'
 
 function MainComponent() {
   return (
-    <div className="main"></div>
+    <div className="main">
+      Home Component
+    </div>
   )
 }
 
