@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import MainComponent from './MainComponent.js'
+import Footer from './Footer'
 
 function Dashboard() {
   return (

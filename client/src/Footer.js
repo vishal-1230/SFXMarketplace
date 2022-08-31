@@ -1,6 +1,7 @@
 import React from 'react'
 function Footer() {
   return (
+<<<<<<< HEAD
     <>
       <div class="footer-left">
         <h3>Company<span>logo</span></h3>
@@ -41,6 +42,9 @@ function Footer() {
         </div>
       </div>
     </>
+=======
+    <div></div>
+>>>>>>> afd25b5299e12e735dac239db44523aebd5a9e51
   )
 }
 export default Footer
