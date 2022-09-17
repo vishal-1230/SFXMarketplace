@@ -1,4 +1,29 @@
-.main{
+.content{
     display: flex;
     flex-direction: row;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.categories{
+    width: 100vw;
+    height: fit-content;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-bottom: #aaa 1px solid;
+}
+
+.catItem{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    border-right: #aaa 0.5px solid;
+    padding: 15px 0;
+    font-weight: 500;
+    cursor: pointer;
+    min-width: 85px;
 }
