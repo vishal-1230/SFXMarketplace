@@ -1,6 +1,6 @@
 import React from 'react'
 import './Leftsecton.css'
-import {HiOutlineFilter} from 'react-icons/hi'
+// import {HiOutlineFilter} from 'react-icons/hi'
 
 function LeftSection() {
   return (
@@ -17,10 +17,10 @@ function LeftSection() {
                   Clickable inside
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Menu item</a></li>
-                <li><a class="dropdown-item" href="#">Menu item</a></li>
-                <li><a class="dropdown-item" href="#">Menu item</a></li>
-                <li><a></a></li>
+                <li><a class="dropdown-item" href="/">Menu item</a></li>
+                <li><a class="dropdown-item" href="/">Menu item</a></li>
+                <li><a class="dropdown-item" href="/">Menu item</a></li>
+                {/* <li><a></a></li> */}
               </ul>
             </div>
         </div><br />
