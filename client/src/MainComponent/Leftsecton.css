@@ -2,3 +2,22 @@
     width: 400px;
     text-align: center;
 }
+
+.btn-group{
+    background: transparent;
+}
+
+.btn{
+    background: transparent;
+    color: black;
+    border: 1px #111 solid;
+    width: 150px;
+    /* text-align: right; */
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.btn:hover{
+    background: #000;
+    color: white;
+}
