@@ -20,6 +20,7 @@ function LeftSection() {
                 <li><a class="dropdown-item" href="#">Menu item</a></li>
                 <li><a class="dropdown-item" href="#">Menu item</a></li>
                 <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a></a></li>
               </ul>
             </div>
         </div><br />
