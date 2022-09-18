@@ -15,6 +15,7 @@ function MainComponent() {
           <li id="5" className='catItem'>Ipsum</li>
           <li id="6" className='catItem'>Ipsum</li>
           <li id="7" className='catItem'>Ipsum</li>
+          <li id="7" className='catItem'>Ipsum</li>
         {/* </ul> */}
       </div>
       <div className="content">

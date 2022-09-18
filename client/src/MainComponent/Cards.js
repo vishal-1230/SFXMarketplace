@@ -4,7 +4,9 @@ import './Cards.css'
 
 function Cards() {
 
-    const arr=['abcd', 'efgh', 'ijkl', 'mnop', 'qrst']
+    const arr=['abcd', 'efgh', 'ijkl', 'mnop', 'qrst', 'uvwx', 'yz', 'abcd', 'efgh', 'ijkl', 'mnop', 'qrst', 'uvwx', 'yz', 'abcd', 'efgh', 'ijkl', 'mnop', 'qrst', 'uvwx', 'yz']
+    // const arr=['abcd', 'efgh', 'ijkl', 'mnop', 'qrst', 'uvwx']
+    // const arr=['abcd', 'efgh', 'ijkl', 'mnop', 'qrst']
 
   return (
     <div className="cards">

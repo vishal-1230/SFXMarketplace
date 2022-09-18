@@ -14,7 +14,7 @@ function LeftSection() {
 
             </div><br /> */}
             <div class="btn-group">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                   Select Genre
               </button>
               <ul class="dropdown-menu">
@@ -27,7 +27,7 @@ function LeftSection() {
         <div className="keyDiv">
             <span className="filterKeyTitle">Key</span><br />
             <div class="btn-group">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                   Select Key
               </button>
               <ul class="dropdown-menu">
@@ -41,7 +41,7 @@ function LeftSection() {
         <div className="bpmDiv">
           <span className="bpmTitle">BPM / Tempo</span><br />
           <div class="btn-group">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                   Select BPM
               </button>
               <ul class="dropdown-menu">

@@ -1,6 +1,7 @@
 .leftSection{
-    width: 400px;
+    min-width: 400px;
     text-align: center;
+    border-right: #aaa 0.1px solid;
 }
 
 .btn-group{
