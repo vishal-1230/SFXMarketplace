@@ -16,7 +16,7 @@ dotenv.config()
 const port=process.env.PORT || 8080
 
 
-mongoose.connect('mongodb+srv://vishal:Cluster2004@cluster0.uy65a.mongodb.net/sfxm?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://vishal:Cluster2004@cluster0.uy65a.mongodb.net/sfxm?retryWrites=true&w=majority', ()=>{if(err) throw err;})
 var db=mongoose.connection
 
 
