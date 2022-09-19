@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import './Cards.css'
+import './Samples.css'
 
 function Cards() {
 
