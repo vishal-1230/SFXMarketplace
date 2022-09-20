@@ -6,7 +6,7 @@ function LeftSection() {
   return (
     <div className="leftSection">
       <br />
-        <h2>Filters</h2><br />
+        <h2><HiOutlineFilter id='filterLogo' />&nbsp;Filters</h2><br />
         <div className="categoryDiv">
             <span className="filterCategoryTitle">Category</span><br />
             {/* <input type="text"  className="genreInput" placeholder='Search Genre' /><br />

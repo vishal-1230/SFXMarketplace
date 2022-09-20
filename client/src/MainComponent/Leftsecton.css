@@ -45,3 +45,9 @@
 .genreDiv{
     margin-top: 10px;
 }
+
+#filterLogo{
+    font-size: 26px;
+    vertical-align: top;
+    margin-top: 6px;
+}
