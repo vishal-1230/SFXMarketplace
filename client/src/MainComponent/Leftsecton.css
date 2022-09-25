@@ -1,11 +1,14 @@
 .leftSection{
-    width: 400px;
+    min-width: 400px;
     text-align: center;
+    border-right: #aaa 0.1px solid;
 }
 
 .btn-group{
     background: transparent;
 }
+
+
 
 .btn{
     background: transparent;
@@ -20,4 +23,31 @@
 .btn:hover{
     background: #000;
     color: white;
+}
+
+.btn:first-child:hover{
+    /* background: #7FB77E; */
+    background: rgb(43, 43, 43);
+    /* border: #7FB77E 1px solid; */
+    color: white;
+}
+
+.dropdown-toggle-show{
+    background: #7FB77E;
+    color: white;
+}
+
+/* .btn-group:hover{
+    background: #000;
+    color: white;
+} */
+
+.genreDiv{
+    margin-top: 10px;
+}
+
+#filterLogo{
+    font-size: 26px;
+    vertical-align: top;
+    margin-top: 6px;
 }

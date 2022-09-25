@@ -1,25 +1,24 @@
 import React from 'react'
 import './maincomponent.css'
 import LeftSection from './MainComponent/LeftSection'
-import Cards from './MainComponent/Cards'
+import Samples from './MainComponent/Samples'
+import SamplePacks from './MainComponent/SamplePacks'
+import Midis from './MainComponent/Midis'
+import Content from './MainComponent/Content'
+import { Link } from 'react-router-dom'
 
 function MainComponent() {
   return (
     <div className="main">
       <div className="categories">
-        {/* <ul className="catsList"> */}
-          <li id="1" className='catItem'>Lorem</li>
-          <li id="2" className='catItem'>Lorem ips</li>
-          <li id="3" className='catItem'>Lorem, ipsum</li>
-          <li id="4" className='catItem'>Lorem </li>
-          <li id="5" className='catItem'>Ipsum</li>
-          <li id="6" className='catItem'>Ipsum</li>
-          <li id="7" className='catItem'>Ipsum</li>
-        {/* </ul> */}
+          <Link to='/' className='a'><li id="0" className="catItem">Samples</li></Link>
+          <Link to='/SamplePacks' className='a'><li id="0" className="catItem">Sample Packs</li></Link>
+          <Link to='/Midis' className='a'><li id="0" className="catItem">MIDI Files</li></Link>
+          <Link to='/' className='a'><li id="0" className="catItem">One Shots</li></Link>
       </div>
       <div className="content">
         <LeftSection />
-        <Cards />
+        <Content />        
       </div>
     </div>
   )

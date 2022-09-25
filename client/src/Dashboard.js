@@ -9,19 +9,19 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function Dashboard() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <div className="dashboard">
         <Navbar />
-          <Routes>
-            <Route exact path='/' element={<MainComponent />} />
-            <Route path='/home' element={<MainComponent />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/downloads' element={<Downloads />} />
-            <Route path='/signuplogin' element={<SignupLogin />} />
-          </Routes>
+        <MainComponent />
+          {/* <Routes> */}
+            {/* <Route exact path='/about' element={<About />} /> */}
+            {/* <Route exact path='/downloads' element={<Downloads />} /> */}
+            {/* <Route exact path='/signuplogin' element={<SignupLogin />} /> */}
+            {/* <Route path='/' element={<MainComponent />} /> */}
+          {/* </Routes> */}
         <Footer />
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
 )
 }
 
