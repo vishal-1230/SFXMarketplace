@@ -1,0 +1,19 @@
+.admin-heading{
+    background: #7FB77E;
+    background: rgb(90, 90, 212);
+    color: #ffa560;
+    color: #ffd2b0;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 50px 45px;
+    margin: 0;
+}
+
+html{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -10,7 +10,11 @@
   justify-content: space-between;
   }
   
-
+:root{
+    --primary-color:#7FB77E;
+    --secondary-color:white;
+    --accent-color:#FFC090;
+}
   
 .navbarHeading{
     margin-top: 0;
