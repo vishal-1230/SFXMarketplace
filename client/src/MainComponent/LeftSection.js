@@ -1,6 +1,6 @@
 import React from 'react'
 import './Leftsecton.css'
-import {HiOutlineFilter} from 'react-icons/hi'
+// import {HiOutlineFilter} from 'react-icons/hi'
 
 function LeftSection() {
   return (
@@ -36,9 +36,16 @@ function LeftSection() {
                   Select Genre
               </button>
               <ul class="dropdown-menu">
+<<<<<<< HEAD
+                <li><a class="dropdown-item" href="/">Menu item</a></li>
+                <li><a class="dropdown-item" href="/">Menu item</a></li>
+                <li><a class="dropdown-item" href="/">Menu item</a></li>
+                {/* <li><a></a></li> */}
+=======
                 <li><a class="dropdown-item" href="#">Genre 1</a></li>
                 <li><a class="dropdown-item" href="#">Genre 2</a></li>
                 <li><a class="dropdown-item" href="#">Genre 3</a></li>
+>>>>>>> a587a72473ba47b6e5d4286dd351bea8979f8ee7
               </ul>
             </div>
         </div><br />
