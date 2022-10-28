@@ -11,8 +11,21 @@
     <div class="admin">
         <h1 class="admin-heading">Admin Panel</h1>
 
-        <form action="http://localhost:8080/postImg" method="post">
-            <input type="file" name="img" id="img">
+        <h1>Upload Samples</h1>
+        <form action="http://localhost:8080/uploadSample" method="post" enctype="multipart/form-data">
+            <label for="">Name</label>&nbsp;&nbsp;&nbsp; 
+            <input type="text" name="name" placeholder="Name of Sample to be Shown"><br>
+            <label for="">Category</label>&nbsp;&nbsp;&nbsp; 
+            <select name="category" id=""></select><br>
+            <label for="">Genre</label>&nbsp;&nbsp;&nbsp; 
+            <select name="genre" id=""></select><br>
+            <label for="">Key</label>&nbsp;&nbsp;&nbsp; 
+            <input type="text" name="key"><br>
+            <label for="">BPM</label>&nbsp;&nbsp;&nbsp; 
+            <input type="number" name="bpm"><br>
+            <label for="">Length</label>&nbsp;&nbsp;&nbsp; 
+            <input type="number" name="length"><br><br>
+            <input type="file" name="trial" id="img"><br><br>
             <button>Submit</button>
         </form>
     </div>

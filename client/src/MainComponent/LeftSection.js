@@ -1,81 +1,45 @@
 import React from 'react'
-import './Leftsecton.css'
-// import {HiOutlineFilter} from 'react-icons/hi'
+import styles from './Leftsection.module.css'
+import {HiOutlineFilter} from 'react-icons/hi'
 
 function LeftSection() {
   return (
-    <div className="leftSection">
+    <div className={styles.leftSection}>
       <br />
-        <h2><HiOutlineFilter id='filterLogo' />&nbsp;Filters</h2><br />
-        <div className="categoryDiv">
-            <span className="filterCategoryTitle">Category</span><br />
-            {/* <input type="text"  className="genreInput" placeholder='Search Genre' /><br />
-            <div className="genreDropdown">
-
-            </div><br /> */}
-            <div class="btn-group">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                  Select Category
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Category 1</a></li>
-                <li><a class="dropdown-item" href="#">Category 2</a></li>
-                <li><a class="dropdown-item" href="#">Category 3</a></li>
-                <li><a class="dropdown-item" href="#">Category 4</a></li>
-              </ul>
-            </div>
+        <h2><HiOutlineFilter id='filterLogo' />&nbsp;Filters</h2><br /><br />
+        
+        <div>
+          <select name="category" id="" className="">
+            <option value="Select Category">Select Category</option>
+            <option value="cat1">Category 1</option>
+            <option value="cat2">Category 2</option>
+            <option value="cat3">Category 3</option>
+          </select>
         </div><br />
-        <div className="genreDiv">
-            <span className="filterGenreTitle">Genre</span><br />
-            {/* <input type="text"  className="genreInput" placeholder='Search Genre' /><br />
-            <div className="genreDropdown">
-
-            </div><br /> */}
-            <div class="btn-group">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                  Select Genre
-              </button>
-              <ul class="dropdown-menu">
-<<<<<<< HEAD
-                <li><a class="dropdown-item" href="/">Menu item</a></li>
-                <li><a class="dropdown-item" href="/">Menu item</a></li>
-                <li><a class="dropdown-item" href="/">Menu item</a></li>
-                {/* <li><a></a></li> */}
-=======
-                <li><a class="dropdown-item" href="#">Genre 1</a></li>
-                <li><a class="dropdown-item" href="#">Genre 2</a></li>
-                <li><a class="dropdown-item" href="#">Genre 3</a></li>
->>>>>>> a587a72473ba47b6e5d4286dd351bea8979f8ee7
-              </ul>
-            </div>
+        <div>
+          <select name="genre" id="">
+            <option value="Select Genre">Select Genre</option>
+            <option value="genre1">Genre 1</option>
+            <option value="genre2">Genre 2</option>
+            <option value="genre3">Genre 3</option>
+          </select>
         </div><br />
-        <div className="keyDiv">
-            <span className="filterKeyTitle">Key</span><br />
-            <div class="btn-group">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                  Select Key
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Key 1</a></li>
-                <li><a class="dropdown-item" href="#">Key 2</a></li>
-                <li><a class="dropdown-item" href="#">Key 3</a></li>
-                <li><a class="dropdown-item" href="#">Key 4</a></li>
-              </ul>
-            </div>
+        <div>
+          <select name="key" id="">
+            <option value="Select Key">Select Key</option>
+            <option value="cat1">Key 1</option>
+            <option value="cat2">Key 2</option>
+            <option value="cat3">Key 3</option>
+          </select>
         </div><br />
-        <div className="bpmDiv">
-          <span className="bpmTitle">BPM / Tempo</span><br />
-          <div class="btn-group">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-                  Select BPM
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">BPM 1</a></li>
-                <li><a class="dropdown-item" href="#">BPM 2</a></li>
-                <li><a class="dropdown-item" href="#">BPM 3</a></li>
-              </ul>
-            </div>
-        </div><br />
+        <div>
+          <select name="bpm" id="">
+            <option value="Select BPM">Select BPM</option>
+            <option value="cat1">BPM 1</option>
+            <option value="cat2">BPM 2</option>
+            <option value="cat3">BPM 3</option>
+          </select>
+        </div>
         <br /><br />
     </div>
   )

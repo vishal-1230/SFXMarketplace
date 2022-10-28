@@ -1,5 +1,5 @@
 import React from 'react'
-import './maincomponent.css'
+import styles from './maincomponent.module.css'
 import LeftSection from './MainComponent/LeftSection'
 import Samples from './MainComponent/Samples'
 import SamplePacks from './MainComponent/SamplePacks'
@@ -9,14 +9,14 @@ import { Link } from 'react-router-dom'
 
 function MainComponent() {
   return (
-    <div className="main">
-      <div className="categories">
-          <Link to='/' className='a'><li id="0" className="catItem">Samples</li></Link>
-          <Link to='/SamplePacks' className='a'><li id="0" className="catItem">Sample Packs</li></Link>
-          <Link to='/Midis' className='a'><li id="0" className="catItem">MIDI Files</li></Link>
-          <Link to='/' className='a'><li id="0" className="catItem">One Shots</li></Link>
+    <div className={styles.main}>
+      <div className={styles.categories}>
+          <Link to='/' className={styles.a}><li id="0" className={styles.catItem}>Samples</li></Link>
+          <Link to='/SamplePacks' className={styles.a}><li id="0" className={styles.catItem}>Sample Packs</li></Link>
+          <Link to='/Midis' className={styles.a}><li id="0" className={styles.catItem}>MIDI Files</li></Link>
+          <Link to='/' className={styles.a}><li id="0" className={styles.catItem}>One Shots</li></Link>
       </div>
-      <div className="content">
+      <div className={styles.content}>
         <LeftSection />
         <Content />        
       </div>

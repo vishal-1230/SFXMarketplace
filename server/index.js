@@ -2,22 +2,27 @@ import express from 'express'
 import mongoose from "mongoose"
 import cors from 'cors'
 import dotenv from 'dotenv'
-import Samples from './Samples.js'
+import Samples from './models/Samples.js'
 import jwt from 'jsonwebtoken'
 import 'ejs'
 import bcrypt from 'bcrypt'
-import fd from 'formidable'
+import formidable from 'formidable'
 import fs from 'fs'
-//             ____________________
-//            /                    \
-//           /                      \
-//          /\/\/\/\/\/\/\/\/\/\/\/\/\                         
-//         /                          \                           
-//        /       INSTALL BCRYPT       \                          
-//       /                              \                          
-//      /________________________________\
+import multer from 'multer'
+import audios from './routes/audios.js'
 
+const storage = multer.diskStorage({
+    filename: function (req, file, cb) {
+      console.log('filename')
+      cb(null, (file.originalname+'.wav'))
+    },
+    destination: function (req, file, cb) {
+      console.log('storage')
+      cb(null, './uploads')
+    },
+  })
 
+const upload=multer({storage})
 
 const app=express()
 
@@ -28,8 +33,10 @@ app.use(cors({
 }))
 dotenv.config()
 
+
 const port=process.env.PORT || 8080
 
+app.use('/audios', audios)
 
 // mongoose.connect('mongodb+srv://vishal:Cluster2004@cluster0.uy65a.mongodb.net/?retryWrites=true&w=majority', (err)=>{if (err) throw err; console.log('connected');})
 mongoose.connect('mongodb+srv://anvkup:ansh_1620@cluster0.uy65a.mongodb.net/?retryWrites=true&w=majority', (err)=>{if (err) throw err; console.log('connected');})
@@ -37,7 +44,7 @@ var db=mongoose.connection
 
 console.log((db.collections))
 
-Samples.create({category:'trial', samples:['trial1, trial2']}, (err)=>{if(err) throw err; console.log('successfully created');})
+Samples.create({category:'trial'}, (err)=>{if(err) throw err; console.log('successfully created');})
 console.log(db.collections)
 
 // Sign Up nd Login
@@ -145,9 +152,9 @@ app.post('/login', (req, res)=>{
     })
 })
 
-app.post('/postImg', (req, res)=>{
-    const file=req.body.img
-    console.log()
+app.post('/uploadSample', upload.single('trial'), (req, res)=>{
+    console.log(req.body);
+    return res.json({Status: 'OK'})
 })
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './SignupLogin.css'
+import styles from './SignupLogin.module.css'
 import { useState } from 'react';
 import logo from './images/SFX.png'
 import { useParams } from 'react-router-dom';
@@ -110,18 +110,18 @@ function SignupLogin() {
   }
 
   return (
-    <div className="trial">
+    <div className={styles.trial}>
 
-    <div className="welcome">
-      <div className="left">
+    <div className={styles.welcome}>
+      <div className={styles.left}>
         <img src={logo} alt="" id="msgslogo" />
       </div>
-      <div className="right">
-        <div className="signbox">
+      <div className={styles.right}>
+        <div className={styles.signbox}>
           {signup ? (
-            <div className="authBox">
-              <h2 className='signup-login-heading'>Sign Up</h2><br />
-              <form action="http://192.168.43.189:8080/signup" method="post" className="signupform">
+            <div className={styles.authBox}>
+              <h2 className={styles.signupLoginHeading}>Sign Up</h2><br />
+              <form action="http://192.168.43.189:8080/signup" method="post" className={styles.signupform}>
                 <label htmlFor="name" id="namelbl">
                   Name
                 </label><br />
@@ -196,21 +196,21 @@ function SignupLogin() {
                 </button>
                 <br />
               </form><br />
-              <span className="btmtext">Already have an account? <span id="loginbtn" className="signuplogin" onClick={()=>{setsignup(!signup)}}> Login</span></span>
+              <span className={styles.btmtext}>Already have an account? <span id="loginbtn" className={styles.signuplogin} onClick={()=>{setsignup(!signup)}}> Login</span></span>
             </div>
           ) : (
-            <div className="authBox">
-              <h2 className='signup-login-heading'>Login</h2><br />
-              <form action="http://192.168.43.189:8080/login" method="post" className="loginform">
+            <div className={styles.authBox}>
+              <h2 className={styles.signupLoginHeading}>Login</h2><br />
+              <form action="http://192.168.43.189:8080/login" method="post" className={styles.loginform}>
                 <label htmlFor="">Username</label><br />
                 <input type="text" name="user" placeholder="UserID" />
                 <br /><br />
                 <label htmlFor="">Password</label><br />
-                <input type="password" name="pswd" id="pswd" className="pswd" placeholder="Enter Password" />
+                <input type="password" name="pswd" id="pswd" className={styles.pswd} placeholder="Enter Password" />
                 <br /><br /><br /><br />
-                <button className="btnSub">Login</button>
+                <button className={styles.btnSub}>Login</button>
               </form><br />
-              <span className="btmtext">Don't have an account? <span id="signupbtn" className="signuplogin" onClick={()=>{setsignup(!signup)}}> SignUp</span></span>
+              <span className={styles.btmtext}>Don't have an account? <span id="signupbtn" className={styles.signuplogin} onClick={()=>{setsignup(!signup)}}> SignUp</span></span>
             </div>
           )}
         </div>

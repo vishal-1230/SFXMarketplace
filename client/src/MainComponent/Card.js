@@ -1,9 +1,9 @@
 import React from 'react'
-import './Card.css'
+import styles from './Card.module.css'
 
 function Card(props) {
   return (
-    <div className='card'>{props.name} + jk</div>
+    <div className={styles.card}>{props.name} + jk</div>
   )
 }
 
